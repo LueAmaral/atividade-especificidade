@@ -6,8 +6,8 @@ Utilizando HTML, CSS e JavaScript desenvolvemos uma página com uma barra latera
 
 ### Desenvolvido por:
 
-Igor Alves dos Santos Floriano @Igor-alves2301
+Igor Alves dos Santos Floriano [@Igor-alves2301](https://github.com/Igor-alves2301)
 
-Lue Rodrigues do Amaral @LueAmaral
+Lue Rodrigues do Amaral [@LueAmaral](https://github.com/LueAmaral)
 
-Thamires Caroline Soares Santos @thamicaroline
+Thamires Caroline Soares Santos [@thamicaroline](https://github.com/thamicaroline)
