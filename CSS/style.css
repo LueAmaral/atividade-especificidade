@@ -1,0 +1,247 @@
+/* Trabalho desenvolvido por:
+Igor Alves dos Santos Floriano
+Lue Rodrigues do Amaral
+Thamires Caroline Soares Santos */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: var(--background-color);
+    overflow-x: hidden;
+    color: var(--default-text);
+}
+
+/* modo escuro */
+
+:root{
+    --background-color: rgb(135, 206, 235);
+    --backgroud-section: #fff;
+    --default-text: #000000;
+    --table-backgroud: #d7d7d7;
+    --invert-text: #ffffff;
+    --constrast-background: #e7e5e5;
+    --nav-background: #366579;
+    --header-gradient: linear-gradient(to right,#006494, #009494);
+    --scrool-color: rgb(96, 96, 96);
+    --scrool-color-hover: rgb(144, 144, 144);
+
+}
+
+.dark-mode:root{
+    --background-color: rgb(86, 128, 145);
+    --backgroud-section: #303030;
+    --default-text: #ffffff;
+    --contrat-backgroud: #1f1f1f;
+    --invert-text: #000000;
+    --constrast-background: #1f1f1f;
+    --nav-background: #274552;
+    --header-gradient: linear-gradient(to right,#025880, #057070);
+    --scrool-color: rgb(170, 170, 170);
+    --scrool-color-hover: rgb(113, 113, 113);
+}
+
+/* barra de rolagem */
+
+::-webkit-scrollbar{
+    width: 12px;
+}
+  
+::-webkit-scrollbar-track{
+    background: var(--background-color);
+}
+  
+::-webkit-scrollbar-thumb{
+    background-color: var(--scrool-color);
+    border-radius: 20px;
+    border: 3px solid var(--background-color);
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color: var(--scrool-color-hover);
+}
+
+/* header */
+
+header{
+    background-image: var(--header-gradient);
+    z-index: 90;
+    position: relative;
+    padding: 10px;
+}
+
+h1{
+    color: white;
+    font-size: 50px;
+    position: relative;
+    left: 15px;
+}
+
+/* nav */
+
+.menulateral{
+    width: 30px;
+    height: 100%;
+    background-color: var(--nav-background);
+    padding-top: 110px;
+    position: fixed;
+    overflow: hidden;
+    transition: .2s;
+    top: 0;
+    left: 0;
+}
+
+.expandir{
+    width: 100%;
+    padding: 3px;
+}
+
+ul{
+    height: 100%;
+    list-style-type: none;
+}
+
+.item{
+    padding-left: 15px;
+}
+
+.item:hover{
+    background-color: #284755;
+    transition: .1s;
+}
+
+.subitem{
+    padding-left: 30px;
+}
+
+.subitem:hover{
+    background-color: #284755;
+    transition: .1s;
+}
+
+a:hover{
+    font-size: 20px;
+    margin: 5px 0px 5px 0px;
+}
+
+#toggletheme{
+    filter: invert();
+    padding: 10px 0px 10px 0px;
+    cursor: pointer;
+}
+
+.material-symbols-rounded{
+    color: white;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 20px 4px;
+    display: flex;
+}
+
+.link{
+    margin-left: 10px;
+}
+
+.menulateral:hover{
+    width: 25%;
+    overflow-y: scroll;
+}
+
+/* conteudo */
+
+main{
+    display: flex;
+    justify-content: end;
+}
+
+section{
+    width: 70%;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #366579;
+    padding: 40px;
+    background-color: var(--backgroud-section);
+    margin: 15px;
+    text-align:justify;
+}
+
+.centralizar{
+    text-align: center;
+    padding: 0px 0px 25px 0px;
+}
+
+h2, h3, h4{
+    padding: 30px 0px 25px 0px;
+}
+
+p{
+    text-indent: 20px;
+}
+
+ol{
+    padding-left: 30px;
+}
+
+/* exemplos */
+
+.codigo{
+    background-color: #1f1f1f;
+    color: rgb(210, 231, 250);
+    padding: 10px;
+    border-radius: 10px; 
+    width: 98%;
+ }
+
+ .propriedade{
+    color: green;
+ }
+
+ code{
+    color: rgb(241, 4, 43);
+ }
+ 
+.esconder {
+    height: 0px;
+    overflow: hidden;
+    display: block;
+    padding: 0px;
+}
+
+/* nota */
+
+.nota{
+    color: var(--default-text);
+    background-color: var(--constrast-background);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px 0px 5px 0px;
+}
+
+/* tabela */
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0px 10px 0px;
+    border-radius: 10px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+
+tr:nth-of-type(odd) {
+    background-color: var(--constrast-background);
+}

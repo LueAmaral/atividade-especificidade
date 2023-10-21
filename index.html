@@ -1,0 +1,258 @@
+<!-- Trabalho desenvolvido por:
+Igor Alves dos Santos Floriano
+Lue Rodrigues do Amaral
+Thamires Caroline Soares Santos -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Programando</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+        <link rel="stylesheet" a href="CSS/style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" />
+        <link rel="icon" type="image/svg" href="IMG/icon.svg">
+    </head>
+
+    <body>
+        <header>
+            <h1>Programando</h1>
+        </header>
+
+        <nav class="menulateral">
+            <div class="expandir">
+                <ul>
+                    <li>
+                        <img id="toggletheme" src="IMG/dark_mode.svg" alt="modo escuro">
+                    </li>
+                    <li>
+                        <span class="material-symbols-rounded">arrow_forward</span>
+                    </li>
+                    <li class="item" >
+                        <a href="#titulo" onclick="resetHref();">
+                            <span class="link">Especificidade</span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="#titulo1" onclick="resetHref();">
+                            <span class="link">1. O que é Especificidade?</span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="#titulo2" onclick="resetHref();">
+                            <span class="link">2. Tipos de Seletores</span>
+                        </a>
+                    </li>
+                    <li>
+                        <li class="subitem">
+                            <a href="#titulo2p1" onclick="resetHref();">
+                                <span class="link">2.1. Seletor de Elemento</span>
+                            </a>
+                        </li>
+                    </li>
+                    <li>
+                        <li class="subitem">
+                            <a href="#titulo2p2" onclick="resetHref();">
+                                <span class="link">2.2. Seletor de Classe</span>
+                            </a>
+                        </li>
+                    </li>
+                    <li>
+                        <li  class="subitem">
+                            <a href="#titulo2p3" onclick="resetHref();">
+                                <span class="link">2.3. Seletor de ID</span>
+                            </a>
+                        </li>
+                    </li>
+                    <li>
+                        <li class="subitem">
+                            <a href="#titulo2p4" onclick="resetHref();">
+                                <span class="link">2.4. Seletor Universal</span>
+                            </a>
+                        </li>
+                    </li>
+                    <li class="item">
+                        <a href="#titulo3" onclick="resetHref();">
+                            <span class="link">3. Como Funciona a Especificidade?</span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="#titulo4" onclick="resetHref();">
+                            <span class="link">4. Exemplos</span>
+                        </a>
+                    </li>
+                    <li>
+                        <li class="subitem">
+                            <a href="#titulo4p1" onclick="resetHref();">
+                                <span class="link">4.1. Exemplo de Especificidade Baixa</span>
+                            </a>
+                        </li>
+                    </li>
+                    <li>
+                        <li class="subitem">
+                            <a href="#titulo4p2" onclick="resetHref();">
+                                <span class="link">4.2. Exemplo de Especificidade Média</span>
+                            </a>
+                        </li>
+                    </li>
+                    <li>
+                        <li class="subitem">
+                            <a href="#titulo4p3" onclick="resetHref();">
+                                <span class="link">4.3. Exemplo de Especificidade Alta</span>
+                            </a>
+                        </li>
+                    </li>
+                    <li class="item">
+                        <a href="#titulo5" onclick="resetHref();">
+                            <span class="link">5. Quadro de Especificidade</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        
+        <main id="titulo" name="titulo">
+            <a name="titulo" class="esconder"></a>
+            <section>
+                <h2 class="centralizar">Especificidade</h2>
+                <p>A especificidade de seletores desempenha um papel fundamental no desenvolvimento de sistemas, especialmente quando se trata de estilos de página em tecnologias web, como HTML e CSS. Os seletores são utilizados para identificar elementos HTML aos quais você deseja aplicar estilos, comportamentos e funcionalidades. A especificidade determina a ordem de prioridade quando múltiplos seletores se aplicam ao mesmo elemento, influenciando o resultado final da apresentação e do funcionamento do sistema.</p>
+                
+                <a name="titulo1" class="esconder"></a>
+                <h3>1. O que é Especificidade?</h3>
+                <p>A especificidade refere-se à medida em que um seletor é capaz de selecionar um elemento específico dentro de um documento HTML ou em um sistema de desenvolvimento de software. Ela determina a prioridade que um seletor tem sobre outros quando múltiplos seletores se aplicam a um mesmo elemento. A especificidade é frequentemente representada por um valor numérico ou uma sequência de quatro números, indicando o grau de especificidade de um seletor.</p>
+                
+                <a name="titulo2" class="esconder"></a>
+                <h3>2. Tipos de Seletores:</h3>
+                
+                <a name="titulo2p1" class="esconder"></a>
+                <h4>2.1. Seletor de Elemento:</h4>
+                <p>- Seleciona elementos HTML com base no nome da tag.</p>
+                <p>- Exemplo: <code>p { color: blue; }</code></p>
+                
+                <a name="titulo2p2" class="esconder"></a>
+                <h4>2.2. Seletor de Classe:</h4>
+                <p>- Seleciona elementos HTML com base em sua classe.</p>
+                <p>- Exemplo: <code>.botao { background-color: green; }</code></p>
+                
+                <a name="titulo2p3" class="esconder"></a>
+                <h4>2.3. Seletor de ID:</h4>
+                <p>- Seleciona um elemento HTML com base no valor do atributo "id".</p>
+                <p>- Exemplo: <code>#cabecalho { font-size: 24px; }</code></p>
+                
+                <a name="titulo2p4" class="esconder"></a>
+                <h4>2.4. Seletor Universal:</h4>
+                <p>- Seleciona todos os elementos HTML.</p>
+                <p>- Exemplo: <code>* { margin: 0; }</code>`</p>
+                
+                <a name="titulo3" class="esconder"></a>
+                <h3>3. Como Funciona a Especificidade?</h3>
+                <p>A especificidade é determinada pela contagem dos seletores em um conjunto de regras CSS. Ela segue uma hierarquia específica, onde a ordem de prioridade é a seguinte:</p>
+                <ol>
+                    <li>Seletor de ID: Maior especificidade.</li>
+                    <li>Seletor de Classe e Pseudo-classes: Média especificidade.</li>
+                    <li>Seletor de Elemento e Pseudo-elementos: Menor especificidade.</li>
+                    <li>Seletor Universal: Mínima especificidade.</li>
+                </ol>
+                <p>Além disso, a contagem de seletores no conjunto de regras contribui para a especificidade. Por exemplo, um seletor composto por um ID e uma classe é mais específico do que um seletor que possui apenas uma classe.</p>
+                
+                <a name="titulo4" class="esconder"></a>
+                <h3>4. Exemplos:</h3>
+                
+                <a name="titulo4p1" class="esconder"></a>
+                <h4>4.1. Exemplo de Especificidade Baixa:</h4>
+                <!-- não pular linha por causa do <pre> -->
+                    <pre>
+                        <div class="codigo"> p &#123;
+                        <span class="propriedade">color</span>: red;
+                    &#125;</div>
+                    </pre>
+                <!-- fim do <pre> -->
+                
+                <a name="titulo4p2" class="esconder"></a>
+                <h4>4.2. Exemplo de Especificidade Média:</h4>
+                <!-- não pular linha por causa do <pre> -->
+                    <pre>
+                        <div class="codigo"><code>.classe-botão</code>&#123;
+                        <span class="propriedade">background-color</span>: blue;
+                    &#125;</div></pre>
+                <!-- fim do <pre> -->  
+                
+                <a name="titulo4p3" class="esconder"></a>
+                <h4>4.3. Exemplo de Especificidade Alta:</h4>
+                <!-- não pular linha por causa do <pre> -->
+                    <pre>
+                        <div class="codigo"><code>#cabecalho</code>&#123;
+                        <span class="propriedade">font-size</span>: 20px;
+                    &#125;</div>
+                    </pre>
+                <!-- fim do <pre> --> 
+                
+                <a name="titulo5" class="esconder"></a>
+                <h3>5. Quadro de Especificidade:</h3>
+                <p>A especificidade é frequentemente representada como um quadro de pontuação, com valores atribuídos a cada tipo de seletor, geralmente em uma sequência de quatro números. Por exemplo:</p>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>Seletor</th>
+                            <th>Valor de Especificidade</th>
+                            <th>Calculo</th>
+                        </tr>
+                        <tr>
+                            <td>p</td>
+                            <td>1</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>p.test</td>
+                            <td>11</td>
+                            <td>1 + 10</td>
+                        </tr>
+                        <tr>
+                            <td>p#demo</td>
+                            <td>101</td>
+                            <td>1 + 100</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;p style="color: pink;"&gt;</td>
+                            <td>1000</td>
+                            <td>1000</td>
+                        </tr>
+                        <tr>
+                            <td>#demo</td>
+                            <td>100</td>
+                            <td>100</td>
+                        </tr>
+                        <tr>
+                            <td>.test</td>
+                            <td>10</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td>p.test1.test2</td>
+                            <td>21</td>
+                            <td>1 + 10 + 10</td>
+                        </tr>
+                        <tr>
+                            <td>#navbar p#demo</td>
+                            <td>201</td>
+                            <td>100 + 1 + 100</td>
+                        </tr>
+                        <tr>
+                            <td>*</td>
+                            <td>0</td>
+                            <td>0 (é ignorado)</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="nota"><strong>Nota:</strong> Estilo interno tem um valor de especificidade de 1000, e tem prioridade em relação ao estilo externo.</div>
+                <div class="nota"><strong>Nota:</strong> A regra <code>!important</code> sobrepõe qualquer outro estilo, até mesmo o CSS Interno(inline).</div>
+                <p>Esses valores são somados para determinar a especificidade de um conjunto de regras. Quanto maior a pontuação, maior a especificidade do seletor.</p>
+                <p>A compreensão da especificidade de seletores é fundamental para o desenvolvimento de sistemas, especialmente quando se trabalha com tecnologias web. Conhecer a hierarquia e o funcionamento dos seletores ajuda a evitar conflitos e a aplicar estilos e comportamentos de forma eficaz em um sistema.</p>
+            </section>
+        </main>
+        
+        <script src="JS/script.js"></script>
+
+    </body>
+</html>
